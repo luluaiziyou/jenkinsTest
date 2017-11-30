@@ -24,6 +24,12 @@
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">malu local</stringProp>
           </elementProp>
+          <elementProp name="workspace2" elementType="Argument">
+            <stringProp name="Argument.name">workspace2</stringProp>
+            <stringProp name="Argument.value">E:\jenkins\workspace\test_git\src\com\ml\test\TestData\OTSv0.9.15证照管理\ERP</stringProp>
+            <stringProp name="Argument.desc">win10_slave</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -91,7 +97,7 @@
         </HTTPSamplerProxy>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">${workspace1}/getOrder.txt</stringProp>
+            <stringProp name="filename">${workspace2}/getOrder.txt</stringProp>
             <stringProp name="fileEncoding">gb2312</stringProp>
             <stringProp name="variableNames">title,erpid,code</stringProp>
             <stringProp name="delimiter">,</stringProp>
@@ -197,7 +203,7 @@
         </HTTPSamplerProxy>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">${workspace1}/removeOrder.txt</stringProp>
+            <stringProp name="filename">${workspace2}/removeOrder.txt</stringProp>
             <stringProp name="fileEncoding">gb2312</stringProp>
             <stringProp name="variableNames">title,erpid,id,code</stringProp>
             <stringProp name="delimiter">,</stringProp>
@@ -308,7 +314,7 @@
         </HTTPSamplerProxy>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-            <stringProp name="filename">${workspace1}/saveOrder.txt</stringProp>
+            <stringProp name="filename">${workspace2}/saveOrder.txt</stringProp>
             <stringProp name="fileEncoding">gb2312</stringProp>
             <stringProp name="variableNames">title,erpid,id,dateofbirth,name,num,sex,type,valid,code</stringProp>
             <stringProp name="delimiter">,</stringProp>
